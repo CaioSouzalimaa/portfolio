@@ -34,8 +34,8 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className={"list-disc pl-2"}>
-        <li>Discover's path especializar, Rocketseat</li>
-        <li>Discover's path conectar, Rocketseat</li>
+        <li>Discover path especializar, Rocketseat</li>
+        <li>Discover path conectar, Rocketseat</li>
         <li>Semana Expert, Erick Wendel</li>
       </ul>
     )
