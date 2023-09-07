@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import {ReactNode, useState, useTransition} from "react";
+import {useState, useTransition} from "react";
 import {TabButton} from "@/app/components/tab_button";
 
 const TAB_DATA = [
@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className={"list-disc pl-2"}>
+      <ul className={"list-disc pl-2 "}>
         <li>React</li>
         <li>Next.js</li>
         <li>JavaScript</li>
@@ -54,7 +54,7 @@ export const AboutSection = () => {
   }
 
   return (
-    <section className={"text-white"}>
+    <section id={"#about"} className={"text-white"}>
       <div className={"md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"}>
         <Image src={"/images/about-image.png"} alt={"about image"} width={500} height={500}/>
         <div className={"mt-4 md:mt-0 text-left flex flex-col h-full"}>
@@ -84,7 +84,7 @@ export const AboutSection = () => {
               Certificações
             </TabButton>
           </div>
-          <div className={"mt-8"}>
+          <div className={"mt-8 list-none"}>
             {TAB_DATA.find((tabData) => tabData.id === tab)?.content}
           </div>
         </div>
