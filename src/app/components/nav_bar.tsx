@@ -4,6 +4,7 @@ import {NavLink} from "@/app/components/nav_link";
 import {useState} from "react";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
 import {MenuOverlay} from "@/app/components/menu_overlay";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -23,10 +24,10 @@ const navLinks = [
 export const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className={"fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100"}>
+    <nav className={"fixed mx-auto border border-[#33353F] border-r-transparent border-l-transparent top-0 left-0 right-0 z-40 bg-[#121212] bg-opacity-100"}>
       <div className={"flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2"}>
-        <Link href={"/"} className={"text-2xl md:text-5xl text-white font-semibold"}>
-          LOGO
+        <Link href={"/"}>
+          <img src={"/images/logo.png"} className={"h-10"} alt={"logo"}/>
         </Link>
         <div className={"mobile-menu block md:hidden"}>
           {
@@ -35,13 +36,13 @@ export const NavBar = () => {
                 className={"flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"}
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
-                <Bars3Icon className={"h-5 w-5"} />
+                <Bars3Icon className={"h-5 w-5"}/>
               </button>) : (
               <button
                 className={"flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"}
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
-                <XMarkIcon className={"h-5 w-5"} />
+                <XMarkIcon className={"h-5 w-5"}/>
               </button>
             )
           }
@@ -58,7 +59,7 @@ export const NavBar = () => {
           </ul>
         </div>
       </div>
-      {navbarOpen? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? <MenuOverlay links={navLinks}/> : null}
     </nav>
   )
 }
