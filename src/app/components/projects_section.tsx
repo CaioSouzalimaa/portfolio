@@ -34,7 +34,7 @@ const projects = [
   }]
 
 export const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Todos");
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
 
@@ -43,7 +43,7 @@ export const ProjectsSection = () => {
     setTag(tag);
   }
 
-  const filteredProjects = tag === "All" ? projects
+  const filteredProjects = tag === "Todos" ? projects
     : projects.filter(project => project.tags.includes(tag));
 
   const cardVariants = {
@@ -63,7 +63,7 @@ export const ProjectsSection = () => {
       </h2>
 
       <div className={"text-white flex flex-row justify-center items-center gap-2 py-6"}>
-        <ProjectTag tag={"All"} onClick={handleTagChange} isSelected={tag === "All"}/>
+        <ProjectTag tag={"Todos"} onClick={handleTagChange} isSelected={tag === "Todos"}/>
         <ProjectTag tag={"Web"} onClick={handleTagChange} isSelected={tag === "Web"}/>
         <ProjectTag tag={"Mobile"} onClick={handleTagChange} isSelected={tag === "Mobile"}/>
       </div>

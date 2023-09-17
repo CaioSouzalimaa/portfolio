@@ -15,7 +15,7 @@ const navLinks = [
     text: "Projetos"
   },
   {
-    href: "#contact",
+    href: "#email",
     text: "Contato"
   }
 ]

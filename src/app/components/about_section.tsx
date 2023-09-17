@@ -5,7 +5,7 @@ import {TabButton} from "@/app/components/tab_button";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Habilidades",
     id: "skills",
     content: (
       <ul className={"list-disc pl-2 "}>
@@ -20,7 +20,7 @@ const TAB_DATA = [
     )
   },
   {
-    title: "education",
+    title: "Educação",
     id: "education",
     content: (
       <ul className={"list-disc pl-2"}>
@@ -30,7 +30,7 @@ const TAB_DATA = [
     )
   },
   {
-    title: "certifications",
+    title: "Certificados",
     id: "certifications",
     content: (
       <ul className={"list-disc pl-2"}>
@@ -69,12 +69,6 @@ export const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              Skills
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
               Habilidades
             </TabButton>
             <TabButton
@@ -82,6 +76,12 @@ export const AboutSection = () => {
               active={tab === "certifications"}
             >
               Certificações
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              Ensino
             </TabButton>
           </div>
           <div className={"mt-8 list-none"}>

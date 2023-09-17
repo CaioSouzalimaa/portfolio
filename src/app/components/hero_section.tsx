@@ -19,7 +19,7 @@ export const HeroSection = () => {
             <TextAnimation/>
           </h1>
           <p className={"text-[#ADB7BE] text-base sm:text-lg lg:text-xl"}>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            Fique à vontade para entrar em contato e transformar sua ideia em realidade.
           </p>
           <div>
             <button
