@@ -7,7 +7,7 @@ type ProjectTagProps = {
 }
 
 export const ProjectTag = (props: ProjectTagProps) => {
-  const buttonStyles = props.isSelected ? "border-purple-500 text-white hover:none " : "";
+  const buttonStyles = props.isSelected ? "border-primary-500 text-white hover:none " : "";
   return (
     <button
       onClick={() => props.onClick(props.tag)}
