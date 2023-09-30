@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     imgUrl: "/images/projects/desafio-newcon.png",
-    title: "Teste de vaga Front-end (NewCon)",
+    title: "SPA para cadastro de pontos turísticos",
     description: "SPA desenvolvida em React utilizando as boas práticas do DDD. Implementando operações CRUD e consumindo uma API construída em ASP.NET Core.",
     tags: ["Web"],
     githubUrl: "https://github.com/CaioSouzalimaa/teste-newcon",
@@ -20,8 +20,8 @@ export const projects = [
   {
     id: 3,
     imgUrl: "/images/projects/capputeeno.png",
-    title: "Teste de vaga Front-end (Rocketseat)",
-    description: "E-commerce para venda de canecas e camisetas.",
+    title: "Site E-commerce para venda de canecas e camisetas",
+    description: "E-commerce desenvolvido em React utilizando Next, tailwind. Consumindo uma API GraphQL para obter os dados dos produtos",
     tags: ["Web"],
     githubUrl: "https://github.com/CaioSouzalimaa/desafio-de-vaga-front-end",
     previewUrl: "",
