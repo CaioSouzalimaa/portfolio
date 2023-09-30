@@ -1,7 +1,7 @@
 "use client"
+import { TextAnimation } from "@/app/components/type_animation";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import {TextAnimation} from "@/app/components/type_animation";
-import {motion} from "framer-motion";
 
 export const HeroSection = () => {
   return (
@@ -28,9 +28,12 @@ export const HeroSection = () => {
             </button>
             <button
               className={"p-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"}>
-              <span className={"block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"}>
+              <a
+                href={"/pdfs/cv-caio.pdf"}
+                className={"block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"}
+                download>
                 Baixar CV
-              </span>
+              </a>
             </button>
           </div>
         </motion.div>

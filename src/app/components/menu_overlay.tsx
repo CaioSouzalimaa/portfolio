@@ -1,4 +1,4 @@
-import {NavLink} from "@/app/components/nav_link";
+import { NavLink } from "@/app/components/nav_link";
 
 type MenuOverlayProps = {
   links: {href: string, text:string}[];
