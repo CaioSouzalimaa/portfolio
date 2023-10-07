@@ -1,7 +1,8 @@
 "use client"
 import Image from "next/image";
-import {useState, useTransition} from "react";
-import {TabButton} from "@/app/components/tab_button";
+import { useState, useTransition } from "react";
+import { TabButton } from "@/app/components/tab_button";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
@@ -34,9 +35,21 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className={"list-disc pl-2"}>
-        <li>Discover path especializar, Rocketseat</li>
-        <li>Discover path conectar, Rocketseat</li>
-        <li>Semana Expert, Erick Wendel</li>
+        <li>
+          <Link href={'https://drive.google.com/file/d/1Ou60-AhtZd52bBMjvwt0jcTQlIgIsDWy/view?pli=1'} target="_blank" >
+            Discover path especializar, Rocketseat
+          </Link>
+        </li>
+        <li>
+          <Link href={'https://drive.google.com/file/d/1juFjmpspl0-TVuJ4dFBaoGoEYk70KN2m/view'} target="_blank" >
+            Discover path conectar, Rocketseat
+          </Link>
+        </li>
+        <li>
+          <Link href={'https://drive.google.com/file/d/1tLnZEoHBHY374oIs_hU9D7kl4G7lUGiP/view'} target="_blank" >
+            Semana Expert, Erick Wendel
+          </Link>
+        </li>
       </ul>
     )
   },
@@ -56,7 +69,7 @@ export const AboutSection = () => {
   return (
     <section id={"#about"} className={"text-white"}>
       <div className={"md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"}>
-        <Image src={"/images/about-image.png"} alt={"about image"} width={500} height={500}/>
+        <Image src={"/images/about-image.png"} alt={"about image"} width={500} height={500} />
         <div className={"mt-4 md:mt-0 text-left flex flex-col h-full"}>
           <h2 className={"text-4xl font-bold text-white mb-4"}>Sobre mim</h2>
           <p className={"text-base lg:text-lg"}>

@@ -15,11 +15,13 @@ export const EmailSection = () => {
         <h5 className={"text-xl font-bold text-white my-2"}>Entre em contato</h5>
         <p className={"text-[#ADB7BE] mb-4 max-w-md"}>Estou aberto a oportunidades e novos projetos.</p>
         <div className={"social flex flex-col gap-2 "}>
-          <Link href={"https://github.com/CaioSouzalimaa"} target={"_blank"} className={"w-8"}>
+          <Link href={"https://github.com/CaioSouzalimaa"} target={"_blank"} className={"flex w-fit items-center gap-2"}>
             <GitHubIcon/>
+            <span className="font-bold text-xl">GitHub</span>
           </Link>
-          <Link href={"https://www.linkedin.com/in/caio-souza-limaa/"} target={"_blank"} className={"w-8"}>
+          <Link href={"https://www.linkedin.com/in/caio-souza-limaa/"} target={"_blank"} className={"flex w-fit items-center gap-2"}>
             <LinkedinIcon/>
+            <span className="font-bold text-xl">Linkedin</span>
           </Link>
         </div>
       </div>
