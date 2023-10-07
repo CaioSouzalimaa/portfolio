@@ -6,7 +6,7 @@ type MenuOverlayProps = {
 
 export const MenuOverlay = (props: MenuOverlayProps) => {
   return (
-    <div className={"flex flex-col py-4 items-center"}>
+    <div className={"flex flex-col py-4 items-center list-none"}>
       {props.links.map((link, index) => (
         <li key={index}>
           <NavLink href={link.href} text={link.text}/>
