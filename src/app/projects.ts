@@ -71,13 +71,4 @@ export const projects = [
     githubUrl: "https://github.com/CaioSouzalimaa/HoneyCombMenu",
     previewUrl: "https://caiosouzalimaa.github.io/HoneyCombMenu/",
   },
-  {
-    id: 9,
-    imgUrl: "/images/projects/calculadora.png",
-    title: "Calculadora",
-    description: "Calculadora funcional.",
-    tags: ["Web"],
-    githubUrl: "https://github.com/CaioSouzalimaa/calculator",
-    previewUrl: "https://caiosouzalimaa.github.io/calculator/",
-  }
 ];
